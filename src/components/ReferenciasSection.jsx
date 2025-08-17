@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react"
+import { useTheme } from "../contexts/ThemeContext"
 
 const referencias = [
   {
@@ -39,6 +40,7 @@ const referencias = [
 ]
 
 export function ReferenciasSection() {
+  const { isDark } = useTheme()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
 
@@ -75,7 +77,7 @@ export function ReferenciasSection() {
     <div className="min-h-screen bg-gray-1000 flex flex-col justify-center px-4">
       <div className="text-center mb-12">
         <h1 className="text-6xl font-bold text-white mb-4">
-          <span className="text-orange-500">Refer</span>ências<span className="text-orange-500">.</span>
+          <span className="text-orange-500">Refer</span><span className={`${isDark ? "bg-white-500 text-white" : "bg-black-900 text-gray-800"}`}>ências</span> 
         </h1>
         <div className="flex justify-center space-x-1 text-orange-500 text-lg">
           <span>⠠⠗⠑⠋⠑⠗⠮⠝⠉⠊⠁⠎</span>
@@ -88,7 +90,7 @@ export function ReferenciasSection() {
           <button
             onClick={prevReferencia}
             disabled={isAnimating}
-            className="p-4 text-white hover:text-orange-500 transition-colors duration-200 disabled:opacity-50 flex-shrink-0"
+            className={`p-4 text-white hover:text-orange-500 transition-colors duration-200 disabled:opacity-50 flex-shrink-0`}
           >
             <ChevronLeft size={40} />
           </button>

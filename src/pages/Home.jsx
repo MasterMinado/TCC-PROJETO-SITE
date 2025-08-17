@@ -1,14 +1,21 @@
-import { Header } from "../components/Header"
+"use client"
+
 import { HeroSection } from "../components/HeroSection"
 import { AnimatedBackground } from "../components/AnimatedBackground"
 import { HomeContent } from "../components/HomeContent"
+import { useTheme } from "../contexts/ThemeContext"
 
 export function Home() {
+  const { isDark } = useTheme()
+
   return (
-    <div className="min-h-screen bg-zinc-950 text-white relative overflow-hidden">
+    <div
+      className={`min-h-screen relative overflow-hidden transition-colors duration-300 ${
+        isDark ? "bg-zinc-950 text-white" : "bg-gray-50 text-gray-900"
+      }`}
+    >
       <AnimatedBackground />
       <div className="relative z-10">
-        <Header />
         <HeroSection />
         <HomeContent />
       </div>
