@@ -5,7 +5,7 @@ import { Game } from "../pages/Game"
 import { Sobre } from "../pages/Sobre"
 import { Perfil } from "../pages/Perfil"
 
-export default function AppRoutes() {
+export function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
