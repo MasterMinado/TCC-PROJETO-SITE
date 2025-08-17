@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { useTheme } from "../contexts/ThemeContext"
 
 const componentes = [
   {
@@ -79,6 +80,7 @@ const componentes = [
 ]
 
 export function ProdutoSection() {
+  const { isDark } = useTheme()
   const [componenteAtual, setComponenteAtual] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
 
@@ -161,7 +163,7 @@ export function ProdutoSection() {
           <h1
             className={`text-4xl font-bold mb-4 transition-all duration-300 ${
               isAnimating ? "opacity-0 translate-x-4" : "opacity-100 translate-x-0"
-            }`}
+            } ${ isDark ? "text-gray-200" : "text-gray-800" }`}
           >
             {componente.nome}
           </h1>
@@ -177,13 +179,13 @@ export function ProdutoSection() {
           <p
             className={`text-gray-300 text-lg leading-relaxed transition-all duration-300 delay-150 ${
               isAnimating ? "opacity-0 translate-x-4" : "opacity-100 translate-x-0"
-            }`}
+            } ${ isDark ? "text-gray-400" : "text-gray-700" }`}
           >
             {componente.descricao}
           </p>
 
           {/* Contador de componentes */}
-          <div className="mt-8 text-sm text-gray-500">
+          <div className={`mt-8 text-sm text-gray-500 ${ isDark ? "text-gray-400" : "text-gray-600" }`}>
             {componenteAtual + 1} de {componentes.length} componentes
           </div>
         </div>
