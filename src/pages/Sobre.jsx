@@ -1,7 +1,7 @@
 import { AnimatedBackground } from "../components/AnimatedBackground";
 import { Header } from "../components/Header";
 
-export function Produtos() {
+export function Sobre() {
     return (
         <div>
         <AnimatedBackground />

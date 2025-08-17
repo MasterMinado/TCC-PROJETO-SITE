@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-export default function PlayButton() {
+export function PlayButton() {
   const [isHovered, setIsHovered] = useState(false)
 
   return (

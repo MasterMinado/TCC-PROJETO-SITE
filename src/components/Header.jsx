@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export default function Header() {
+export function Header() {
   return (
     <header className="w-full px-6 py-4 flex items-center justify-between relative z-20">
       {/* Menu hamburger */}

@@ -1,11 +1,11 @@
-import { AnimatedBackground } from "../components/AnimatedBackground";
 import { Header } from "../components/Header";
+import { AnimatedBackground } from "../components/AnimatedBackground";
 
-export function Produtos() {
+export function Perfil() {
     return (
         <div>
         <AnimatedBackground />
-        <Header />
+        <Header /> 
         </div>
     );
     }
