@@ -103,7 +103,7 @@ export function ProdutoSection() {
   const componente = componentes[componenteAtual]
 
   return (
-    <div className="container mx-auto px-6 py-16">
+    <div className="container mx-auto px-40 py-44">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Área da imagem com navegação */}
         <div className="relative">

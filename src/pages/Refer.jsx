@@ -1,7 +1,7 @@
 "use client"
 
-import {Header} from "../components/Header"
 import {ReferenciasSection} from "../components/ReferenciasSection"
+import { AnimatedBackground } from "../components/AnimatedBackground"
 import { useTheme } from "../contexts/ThemeContext"
 
 export function Refer() {
@@ -13,7 +13,10 @@ export function Refer() {
         isDark ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"
       }`}
     >
-      <ReferenciasSection />
+      <AnimatedBackground />
+      <div className="relative z-10">
+        <ReferenciasSection />
+      </div>
     </div>
   )
 }

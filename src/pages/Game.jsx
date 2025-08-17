@@ -1,6 +1,5 @@
 "use client"
 
-import { Header } from "../components/Header"
 import { GameSection } from "../components/GameSection"
 import { AnimatedBackground } from "../components/AnimatedBackground"
 import { useTheme } from "../contexts/ThemeContext"

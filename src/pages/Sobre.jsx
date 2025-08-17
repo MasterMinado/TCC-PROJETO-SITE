@@ -1,6 +1,6 @@
 "use client"
 
-import {Header} from "../components/Header"
+import { AnimatedBackground } from "../components/AnimatedBackground"
 import {SobreSection} from "../components/SobreSection"
 import { useTheme } from "../contexts/ThemeContext"
 
@@ -13,7 +13,10 @@ export function Sobre() {
         isDark ? "bg-black text-white" : "bg-white text-gray-900"
       }`}
     >
-      <SobreSection />
+      <AnimatedBackground />
+      <div className="relative z-10">
+        <SobreSection />
+      </div>
     </div>
   )
 }

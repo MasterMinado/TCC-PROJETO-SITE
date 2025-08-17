@@ -8,8 +8,7 @@ export function Header() {
   const { isDark, toggleTheme } = useTheme()
 
   return (
-    <header className={`w-full px-9 py-4 flex items-center justify-between relative z-20 ${
-      isDark ? "bg-gray-900" : "bg-white" }`}
+    <header className={`w-full px-9 py-4 flex items-center justify-between fixed top-0 left-0 z-30 bg-transparent`}
 >
       {/* Menu hamburger */}
       <div className="flex flex-col gap-1 cursor-pointer group">
