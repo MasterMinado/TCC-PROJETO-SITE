@@ -24,8 +24,8 @@ export function Header() {
         <Link to="/sobre" className="text-white hover:text-orange-500 transition-colors font-medium">
           Sobre nós
         </Link>
-        <Link to="/perfil" className="text-white hover:text-orange-500 transition-colors font-medium">
-          Perfil
+        <Link to="/refer" className="text-white hover:text-orange-500 transition-colors font-medium">
+          Referências
         </Link>
       </nav>
 

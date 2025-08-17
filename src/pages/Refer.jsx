@@ -1,11 +1,11 @@
 import { Header } from "../components/Header";
-import { AnimatedBackground } from "../components/AnimatedBackground";
+import { ReferenciasSection } from "../components/ReferenciasSection";
 
-export function Perfil() {
+export function Refer() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />
-      <AnimatedBackground />
+      <ReferenciasSection />
     </div>
   )
 }

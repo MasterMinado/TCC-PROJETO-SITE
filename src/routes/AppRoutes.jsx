@@ -3,7 +3,7 @@ import { Home } from "../pages/Home"
 import { Produtos } from "../pages/Produtos"
 import { Game } from "../pages/Game"
 import { Sobre } from "../pages/Sobre"
-import { Perfil } from "../pages/Perfil"
+import { Refer } from "../pages/Refer"
 
 export function AppRoutes() {
   return (
@@ -12,7 +12,7 @@ export function AppRoutes() {
       <Route path="/produto" element={<Produtos />} />
       <Route path="/game" element={<Game />} />
       <Route path="/sobre" element={<Sobre />} />
-      <Route path="/perfil" element={<Perfil />} />
+      <Route path="/refer" element={<Refer />} />
     </Routes>
   )
 }
