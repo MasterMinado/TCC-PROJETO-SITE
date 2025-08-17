@@ -23,7 +23,7 @@ export function HomeContent() {
 
       {/* Seção Nosso Diferencial */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-6">Nosso Diferencial.</h2>
+        <h2 className={`text-4xl font-bold mb-6 ${ isDark ? "text-white" : "text-gray-800"}`}>Nosso Diferencial.</h2>
         <p className={`text-zinc-300 text-lg max-w-3xl mx-auto leading-relaxed ${ isDark ? "text-gray-400" : "text-gray-700"}`}>
           Desenvolvemos uma solução inovadora que combina tecnologia avançada com design inclusivo, criando uma
           experiência única para o aprendizado do Braille. Nossa abordagem integra hardware e software de forma
@@ -36,7 +36,7 @@ export function HomeContent() {
         <div className="bg-zinc-800 p-8 rounded-lg">
           <div className="flex items-center mb-4">
             <User className="w-8 h-8 text-orange-500 mr-3" />
-            <h3 className="text-2xl font-bold">Público alvo</h3>
+            <h3 className={`text-2xl font-bold text-white`}>Público alvo</h3>
           </div>
           <p className="text-zinc-300 leading-relaxed">
             Pessoas cegas ou com baixa visão que desejam aprender Braille, educadores especializados, instituições de
@@ -46,7 +46,7 @@ export function HomeContent() {
         <div className="bg-zinc-800 p-8 rounded-lg">
           <div className="flex items-center mb-4">
             <Target className="w-8 h-8 text-orange-500 mr-3" />
-            <h3 className="text-2xl font-bold">Objetivo</h3>
+            <h3 className={`text-2xl font-bold text-white`}>Objetivo</h3>
           </div>
           <p className="text-zinc-300 leading-relaxed">
             Democratizar o acesso ao sistema Braille através de uma solução tecnológica inovadora, promovendo autonomia,

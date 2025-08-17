@@ -10,9 +10,7 @@ export function Home() {
 
   return (
     <div
-      className={`min-h-screen relative overflow-hidden transition-colors duration-300 ${
-        isDark ? "bg-zinc-950 text-white" : "bg-gray-50 text-gray-900"
-      }`}
+      className={`min-h-screen relative overflow-hidden transition-colors duration-300 `}
     >
       <AnimatedBackground />
       <div className="relative z-10">
