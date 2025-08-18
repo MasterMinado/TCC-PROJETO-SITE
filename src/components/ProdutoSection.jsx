@@ -11,7 +11,7 @@ const componentes = [
     preco: "R$ 30,00",
     descricao:
       "Utilizamos o componente Servo Motor MG995 para levantar os pinos do leitor de braille, pois ele oferece alto torque, durabilidade e engrenagens metálicas que suportam esforços repetitivos, garantindo confiabilidade ao sistema.",
-    imagem: "/public/images/servo.png",
+    imagem: "/images/servo.png",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const componentes = [
     preco: "R$ 227,00",
     descricao:
       "interpretar comandos de voz e acionar automaticamente os mecanismos do protótipo, proporcionando uma experiência de usuário mais intuitiva e acessível.",
-    imagem: "/public/images/microfone.png",
+    imagem: "/images/microfone.png",
   },
   {
     id: 3,

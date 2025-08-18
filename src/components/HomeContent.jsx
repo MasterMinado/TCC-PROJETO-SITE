@@ -24,7 +24,7 @@ export function HomeContent() {
       {/* Seção Nosso Diferencial */}
       <div className="text-center mb-16">
         <h2 className={`text-4xl font-bold mb-6 ${ isDark ? "text-white" : "text-gray-800"}`}>Nosso Diferencial.</h2>
-        <p className={`text-zinc-300 text-lg max-w-3xl mx-auto leading-relaxed ${ isDark ? "text-gray-400" : "text-gray-700"}`}>
+        <p className={`text-lg max-w-3xl mx-auto leading-relaxed ${ isDark ? "text-gray-400" : "text-gray-700"}`}>
           Desenvolvemos uma solução inovadora que combina tecnologia avançada com design inclusivo, criando uma
           experiência única para o aprendizado do Braille. Nossa abordagem integra hardware e software de forma
           intuitiva, tornando o processo de alfabetização mais eficiente e acessível.
