@@ -7,19 +7,19 @@ import { useTheme } from "../contexts/ThemeContext"
 const componentes = [
   {
     id: 1,
-    nome: "Componente Alpha",
-    preco: "R$ 25,00",
+    nome: "Servo Motor MG995",
+    preco: "R$ 30,00",
     descricao:
-      "Utilizamos o componente Alpha para [função], pois ele oferece [benefício principal], tornando o protótipo mais eficiente e acessível.",
-    imagem: "/componente-alpha.png",
+      "Utilizamos o componente Servo Motor MG995 para levantar os pinos do leitor de braille, pois ele oferece alto torque, durabilidade e engrenagens metálicas que suportam esforços repetitivos, garantindo confiabilidade ao sistema.",
+    imagem: "/public/images/servo.png",
   },
   {
     id: 2,
-    nome: "Componente Beta",
-    preco: "R$ 35,00",
+    nome: "Módulo de Reconhecimento de Voz com Microfone VR3",
+    preco: "R$ 227,00",
     descricao:
-      "Utilizamos o componente Beta para [função], pois ele oferece [benefício principal], tornando o protótipo mais eficiente e acessível.",
-    imagem: "/componente-beta.png",
+      "interpretar comandos de voz e acionar automaticamente os mecanismos do protótipo, proporcionando uma experiência de usuário mais intuitiva e acessível.",
+    imagem: "/public/images/microfone.png",
   },
   {
     id: 3,

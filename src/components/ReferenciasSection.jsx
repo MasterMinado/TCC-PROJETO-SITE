@@ -90,7 +90,7 @@ export function ReferenciasSection() {
           <button
             onClick={prevReferencia}
             disabled={isAnimating}
-            className={`p-4 text-white hover:text-orange-500 transition-colors duration-200 disabled:opacity-50 flex-shrink-0`}
+            className={`p-4 hover:text-orange-500 transition-colors duration-200 disabled:opacity-50 flex-shrink-0 ${isDark ? "text-white" : "text-gray-800"}`}
           >
             <ChevronLeft size={40} />
           </button>
@@ -135,7 +135,7 @@ export function ReferenciasSection() {
           <button
             onClick={nextReferencia}
             disabled={isAnimating}
-            className="p-4 text-white hover:text-orange-500 transition-colors duration-200 disabled:opacity-50 flex-shrink-0"
+            className={`p-4 hover:text-orange-500 transition-colors duration-200 disabled:opacity-50 flex-shrink-0 ${isDark ? "text-white" : "text-gray-800"}`}
           >
             <ChevronRight size={40} />
           </button>
