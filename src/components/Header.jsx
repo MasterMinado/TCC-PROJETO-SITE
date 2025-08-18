@@ -55,6 +55,12 @@ export function Header() {
         >
           Sobre
         </Link>
+        <Link
+          to="/tutorial"
+          className={`hover:text-orange-500 transition-colors font-medium ${isDark ? "text-white" : "text-gray-800"}`}
+        >
+          Tutorial
+        </Link>
       </nav>
 
       {/* Theme toggle and Download button */}
