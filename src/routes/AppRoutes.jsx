@@ -8,7 +8,7 @@ import {Game} from "../pages/Game"
 import {Sobre} from "../pages/Sobre"
 import {Produtos} from "../pages/Produtos"
 import {Refer} from "../pages/Refer"
-import Tutorial from "../pages/tutorial"
+import Tutorial from "../pages/Tutorial"
 
 export function AppRoutes() {
   return (
