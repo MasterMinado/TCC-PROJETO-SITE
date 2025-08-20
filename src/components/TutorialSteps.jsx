@@ -64,10 +64,6 @@ export function TutorialSteps() {
                 </div>
               </div>
 
-              {/* Progress Line */}
-              {index < steps.length - 1 && (
-                <div className="absolute left-9 top-16 w-0.5 h-8 bg-gradient-to-b from-blue-500 to-purple-500 opacity-30"></div>
-              )}
             </div>
           ))}
         </div>

@@ -18,7 +18,7 @@ const componentes = [
     nome: "Módulo de Reconhecimento de Voz com Microfone VR3",
     preco: "R$ 227,00",
     descricao:
-      "interpretar comandos de voz e acionar automaticamente os mecanismos do protótipo, proporcionando uma experiência de usuário mais intuitiva e acessível.",
+      "Interpretar comandos de voz e acionar automaticamente os mecanismos do protótipo, proporcionando uma experiência de usuário mais intuitiva e acessível.",
     imagem: "/images/microfone.png",
   },
   {
