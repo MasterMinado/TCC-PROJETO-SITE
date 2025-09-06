@@ -23,59 +23,59 @@ const componentes = [
   },
   {
     id: 3,
-    nome: "Componente Gamma",
-    preco: "R$ 45,00",
+    nome: "ESP32",
+    preco: "R$ 59,90",
     descricao:
-      "Utilizamos o componente Gamma para [função], pois ele oferece [benefício principal], tornando o protótipo mais eficiente e acessível.",
-    imagem: "/componente-gamma.png",
+      "O ESP32 foi escolhido por ser um microcontrolador de alto desempenho, com conectividade Wi-Fi e Bluetooth integradas, suporte a protocolos de comunicação diversos (UART, SPI, I2C, PWM), baixo consumo de energia e ampla compatibilidade com bibliotecas, o que garante flexibilidade e eficiência no desenvolvimento do projeto.",
+    imagem: "/images/esp32.webp",
   },
   {
     id: 4,
-    nome: "Componente Delta",
-    preco: "R$ 30,00",
+    nome: "Módulo MP3 -  DFPlayer Mini",
+    preco: "R$ 18,90",
     descricao:
-      "Utilizamos o componente Delta para [função], pois ele oferece [benefício principal], tornando o protótipo mais eficiente e acessível.",
-    imagem: "/componente-delta.png",
+      "O DFPlayer Mini foi escolhido por ser um módulo compacto e econômico capaz de reproduzir arquivos MP3 a partir de cartão microSD, possuindo saída direta para alto-falante e funcionamento independente, o que simplifica bastante o projeto.",
+    imagem: "/images/4MDA2_5.jpg",
   },
   {
     id: 5,
-    nome: "Componente Epsilon",
-    preco: "R$ 40,00",
+    nome: "Mini Alto-Falante",
+    preco: "R$ 11,90",
     descricao:
-      "Utilizamos o componente Epsilon para [função], pois ele oferece [benefício principal], tornando o protótipo mais eficiente e acessível.",
-    imagem: "/componente-epsilon.png",
+      "O mini alto-falante foi escolhido por ser leve, compacto e capaz de reproduzir áudio com boa eficiência em baixas potências, sendo ideal para projetos embarcados e dispositivos portáteis.",
+    imagem: "/images/download.webp",
   },
   {
     id: 6,
-    nome: "Componente Zeta",
-    preco: "R$ 50,00",
+    nome: "Fonte Ajustável para Protoboard",
+    preco: "R$ 7,12",
     descricao:
-      "Utilizamos o componente Zeta para [função], pois ele oferece [benefício principal], tornando o protótipo mais eficiente e acessível.",
-    imagem: "/componente-zeta.png",
+      "A fonte ajustável para protoboard foi escolhida por fornecer tensões de 3,3 V e 5 V, facilitando a alimentação de circuitos eletrônicos de forma prática, estável e segura durante os testes e prototipagem.",
+    imagem: "/images/fonte.webp",
   },
   {
     id: 7,
-    nome: "Componente Eta",
-    preco: "R$ 28,00",
+    nome: "Protoboard",
+    preco: "R$ 10,00",
     descricao:
-      "Utilizamos o componente Eta para [função], pois ele oferece [benefício principal], tornando o protótipo mais eficiente e acessível.",
-    imagem: "/componente-eta.png",
+      "Protoboard permite montar e testar circuitos de forma prática e sem solda.",
+    imagem: "/images/protoboard.webp",
   },
   {
     id: 8,
-    nome: "Componente Theta",
-    preco: "R$ 55,00",
+    nome: "Filamento PLA Branco Velvet High Speed Premium - 1Kg",
+    preco: "R$ 90,42",
     descricao:
-      "Utilizamos o componente Theta para [função], pois ele oferece [benefício principal], tornando o protótipo mais eficiente e acessível.",
-    imagem: "/componente-theta.png",
+      "Filamento PLA branco oferece boa qualidade de impressão e acabamento adequado para prototipagem.",
+    imagem: "/images/filamento.webp",
   },
   {
     id: 9,
-    nome: "Componente Iota",
-    preco: "R$ 38,00",
+    nome: "Jumpers",
+    preco: "R$ 9,90",
     descricao:
-      "Utilizamos o componente Iota para [função], pois ele oferece [benefício principal], tornando o protótipo mais eficiente e acessível.",
-    imagem: "/componente-iota.png",
+      "Utilizamos para conectar componentes eletrônicos em protoboards e módulos, permitindo montagem rápida e testes de circuitos sem solda.",
+    imagem: "/images/jumpers.webp",
   },
 ]
 
