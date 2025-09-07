@@ -23,10 +23,7 @@ export function GameSection() {
           <p
             className={`text-sm sm:text-base leading-relaxed text-justify ${isDark ? "text-gray-400" : "text-gray-800"}`}
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the like Aldus
-            PageMaker including versions of Lorem Ipsum.
+Quatro personagens cegos embarcam em uma jornada única para aprender Braille. Pelo caminho, eles enfrentam inimigos e obstáculos, enquanto juntam letras e formam palavras que os levam cada vez mais longe. A grande missão é chegar até o protótipo, símbolo da conquista do conhecimento e da superação.
           </p>
         </div>
       </div>
@@ -53,7 +50,7 @@ export function GameSection() {
         <p
           className={`mb-6 sm:mb-8 max-w-md mx-auto text-sm sm:text-base ${isDark ? "text-gray-400" : "text-gray-800"}`}
         >
-          Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.
+  Entre nesse desafio e ajude os quatro personagens a vencer inimigos, juntar palavras em Braille e conquistar o protótipo. 
         </p>
         <button
           className={`bg-white text-black px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors duration-300 flex items-center gap-2 mx-auto text-sm sm:text-base`}
