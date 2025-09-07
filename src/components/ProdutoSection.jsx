@@ -107,7 +107,7 @@ export function ProdutoSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         {/* Área da imagem com navegação */}
         <div className="relative order-2 lg:order-1">
-          <div className="bg-gray-800 rounded-lg aspect-square flex items-center justify-center relative overflow-hidden">
+          <div className="bg-gray-800 rounded-3xl aspect-square flex items-center justify-center relative overflow-hidden">
             <img
               src={componente.imagem || "/placeholder.svg"}
               alt={componente.nome}
