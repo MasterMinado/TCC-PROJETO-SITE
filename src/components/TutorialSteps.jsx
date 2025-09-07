@@ -1,16 +1,32 @@
 "use client"
 
 import { useTheme } from "../contexts/ThemeContext"
+import { CheckCircle, Circle } from "lucide-react"
 
 export function TutorialSteps() {
   const { isDark } = useTheme()
 
   const steps = [
-    { id: 1, title: "Fundamentos do Braille", description: "Aprenda a estrutura básica do sistema Braille e como os pontos formam as letras.", completed: true },
-    { id: 2, title: "Alfabeto e Números", description: "Domine todas as letras do alfabeto e os números em Braille.", completed: true },
-    { id: 3, title: "Pontuação e Símbolos", description: "Aprenda os sinais de pontuação e símbolos especiais.", completed: false },
-    { id: 4, title: "Palavras e Frases", description: "Pratique a leitura de palavras completas e frases simples.", completed: false },
-    { id: 5, title: "Leitura Avançada", description: "Desenvolva fluência na leitura de textos mais complexos.", completed: false },
+    {
+      title: "Fundamentos do Braille",
+      description: "Aprenda a história e os princípios básicos do sistema Braille",
+      completed: true,
+    },
+    {
+      title: "Alfabeto e Números",
+      description: "Domine todas as letras e números em Braille",
+      completed: true,
+    },
+    {
+      title: "Pontuação e Símbolos",
+      description: "Aprenda pontuação, acentos e símbolos especiais",
+      completed: false,
+    },
+    {
+      title: "Leitura Avançada",
+      description: "Pratique com textos complexos e contrações",
+      completed: false,
+    },
   ]
 
   return (
@@ -19,51 +35,59 @@ export function TutorialSteps() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className={isDark ? "text-white" : "text-gray-900"}>Seu Caminho de</span>
-            <span className="bg-gradient-to-r from-orange-600 to-orange-900 bg-clip-text text-transparent ml-2">
+            <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent ml-2">
               Aprendizado
             </span>
           </h2>
-          <p className={`text-lg ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-            Siga nosso programa estruturado para dominar o Braille
+          <p className={`text-lg max-w-2xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
+            Siga nosso programa estruturado e progressivo
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-8">
           {steps.map((step, index) => (
             <div
-              key={step.id}
-              className={`relative p-6 rounded-2xl border transition-all duration-300 hover:shadow-lg ${
-                isDark
-                  ? "bg-gray-900/50 border-gray-800 hover:border-gray-700"
-                  : "bg-white border-gray-200 hover:border-gray-300"
+              key={index}
+              className={`flex items-start gap-6 p-6 rounded-2xl border transition-all duration-300 ${
+                step.completed
+                  ? isDark
+                    ? "bg-orange-900/20 border-orange-800"
+                    : "bg-orange-50 border-orange-200"
+                  : isDark
+                    ? "bg-gray-900/50 border-gray-800"
+                    : "bg-white border-gray-200"
               }`}
             >
-              <div className="flex items-start gap-4">
-                {/* Step Icon */}
-                <div className="flex-shrink-0 mt-1">
-                  
-                </div>
-
-                {/* Content */}
-                <div className="flex-1">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3
-                      
-                    >
-                      {step.title}
-                    </h3>
-                    <span
-                      className={`text-sm px-3 py-1 rounded-full ${
-                        isDark ? "bg-gray-800 text-gray-300" : "bg-gray-100 text-gray-600"
-                      }`}
-                    >
-                      {step.duration}
-                    </span>
-                  </div>
-                  <p className={`mb-0 ${isDark ? "text-gray-400" : "text-gray-600"}`}>{step.description}</p>
-                </div>
+              <div className="flex-shrink-0">
+                {step.completed ? (
+                  <CheckCircle className="w-8 h-8 text-orange-500" />
+                ) : (
+                  <Circle className={`w-8 h-8 ${isDark ? "text-gray-400" : "text-gray-300"}`} />
+                )}
               </div>
-
+              <div className="flex-1">
+                <h3
+                  className={`text-xl font-semibold mb-2 ${
+                    step.completed ? "text-orange-500" : isDark ? "text-white" : "text-gray-900"
+                  }`}
+                >
+                  {step.title}
+                </h3>
+                <p className={isDark ? "text-gray-400" : "text-gray-600"}>{step.description}</p>
+              </div>
+              <div className="flex-shrink-0">
+                <span
+                  className={`text-sm font-medium px-3 py-1 rounded-full ${
+                    step.completed
+                      ? "bg-orange-500 text-white"
+                      : isDark
+                        ? "bg-gray-800 text-gray-400"
+                        : "bg-gray-100 text-gray-500"
+                  }`}
+                >
+                  {step.completed ? "Concluído" : "Pendente"}
+                </span>
+              </div>
             </div>
           ))}
         </div>

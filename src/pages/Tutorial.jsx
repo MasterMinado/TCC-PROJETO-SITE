@@ -1,9 +1,9 @@
 "use client"
 
-import {AnimatedBackground} from "../components/AnimatedBackground"
-import {TutorialHero} from "../components/TutorialHero"
-import {TutorialSteps} from "../components/TutorialSteps"
-import {TutorialFeatures} from "../components/TutorialFeatures"
+import { AnimatedBackground } from "../components/AnimatedBackground"
+import { TutorialHero } from "../components/TutorialHero"
+import { TutorialSteps } from "../components/TutorialSteps"
+import { TutorialFeatures } from "../components/TutorialFeatures"
 import { useTheme } from "../contexts/ThemeContext"
 
 export default function Tutorial() {

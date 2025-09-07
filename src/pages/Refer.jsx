@@ -1,6 +1,6 @@
 "use client"
 
-import {ReferenciasSection} from "../components/ReferenciasSection"
+import { ReferenciasSection } from "../components/ReferenciasSection"
 import { AnimatedBackground } from "../components/AnimatedBackground"
 import { useTheme } from "../contexts/ThemeContext"
 

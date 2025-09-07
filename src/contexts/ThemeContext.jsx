@@ -12,7 +12,7 @@ export function ThemeProvider({ children }) {
     if (savedTheme) {
       setIsDark(savedTheme === "dark")
     } else {
-      localStorage.setItem("theme", "light") // padrão
+      localStorage.setItem("theme", "light")
     }
   }, [])
 

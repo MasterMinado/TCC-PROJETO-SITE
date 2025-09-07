@@ -1,6 +1,6 @@
 "use client"
 
-import {ProdutoSection} from "../components/ProdutoSection"
+import { ProdutoSection } from "../components/ProdutoSection"
 import { AnimatedBackground } from "../components/AnimatedBackground"
 import { useTheme } from "../contexts/ThemeContext"
 

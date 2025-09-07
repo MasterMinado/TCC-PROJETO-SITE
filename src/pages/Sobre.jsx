@@ -1,7 +1,7 @@
 "use client"
 
 import { AnimatedBackground } from "../components/AnimatedBackground"
-import {SobreSection} from "../components/SobreSection"
+import { SobreSection } from "../components/SobreSection"
 import { useTheme } from "../contexts/ThemeContext"
 
 export function Sobre() {
