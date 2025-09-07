@@ -47,9 +47,10 @@ export function SobreSection() {
             {/* Profile Image */}
             <div className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 rounded-full overflow-hidden bg-gray-200">
               <img
-                src={`/images/team-member-${index + 1}.jpg`}
+                src={`/images/team-member-${index + 1}.jpeg`}
                 alt={member.name}
                 className="w-full h-full object-cover"
+                
               />
             </div>
 
