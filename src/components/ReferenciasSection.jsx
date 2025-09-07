@@ -9,33 +9,33 @@ const referencias = [
     id: 1,
     logo: "/celsul-logo.png",
     citacao:
-      "Karnal, A. R. (2010). O uso do Braille eletrônico para a alfabetização de cegos. Anais do IX Encontro do CELSUL, Palhoça, SC. Universidade do Sul de Santa Catarina.",
-    relevancia: "Relevância para o projeto: Inovação em alfabetização acessível.",
-    link: "https://example.com/artigo1",
+      "O processo de alfabetização de crianças cegas em braile",
+    relevancia: "Este trabalho analisa o processo de alfabetização de crianças cegas em braile com vistas a duas abordagens teóricas da compreensão da linguagem",
+    link: "https://www.academia.edu/1282202/O_processo_de_alfabetização_de_crianças_cegas_em_braile",
   },
   {
     id: 2,
     logo: "/usp-logo.png",
     citacao:
-      "Silva, M. C. (2018). Tecnologias assistivas no ensino de Braille: uma abordagem inclusiva. Revista Brasileira de Educação Especial, 24(2), 245-260.",
-    relevancia: "Relevância para o projeto: Metodologias de ensino inclusivo com tecnologia.",
-    link: "https://example.com/artigo2",
+      "Conversor Braile: Um Aporte ao Processo de Alfabetização de Pessoas com Deficiência Visual",
+    relevancia: "Este artigo descreve o desenvolvimento de um artefato tecnológico de baixo custo e fácil utilização destinado a servir como suporte ao ensino e aprendizagem do sistema Braile",
+    link: "http://senid.upf.br/2016/images/pdf/151429.pdf",
   },
   {
     id: 3,
     logo: "/unicamp-logo.png",
     citacao:
-      "Santos, J. P. (2019). Dispositivos táteis para aprendizagem do sistema Braille. Dissertação de Mestrado, UNICAMP, Campinas, SP.",
-    relevancia: "Relevância para o projeto: Desenvolvimento de interfaces táteis inovadoras.",
-    link: "https://example.com/artigo3",
+      "BRAILER, CONVERSOR DE TEXTOS PARA BRAILLE NO ARDUINO.",
+      relevancia: "O presente artigo tem por objetivo apresentar um protótipo para contribuir ao acesso digital dos portadores de deficiência visual através da demonstração de como criar um dispositivo que faça a conversão de textos para o formato braille.",
+    link: "https://painel.passofundo.ifsul.edu.br/uploads/arq/201603031847071559681307.pdf",
   },
   {
     id: 4,
     logo: "/ufsc-logo.png",
     citacao:
-      "Oliveira, L. F. (2021). Gamificação no ensino de Braille: estratégias digitais para inclusão. Anais do Congresso Brasileiro de Informática na Educação, Florianópolis, SC.",
-    relevancia: "Relevância para o projeto: Aplicação de gamificação em educação inclusiva.",
-    link: "https://example.com/artigo4",
+      "O USO DO BRAILE ELETRÔNICO PARA A ALFABETIZAÇÃO DE CEGOS",
+    relevancia: "A partir da criação de uma ferramenta computacional chamada de braile eletrônico, ue tem por objetivo dinamizar o processo de escrita em braile, iniciou-se o processo de alfabetização de uma aluna cega em escola pública.",
+    link: "https://www.academia.edu/1282201/O_USO_DO_BRAILE_ELETRÔNICO_PARA_A_ALFABETIZAÇÃO_DE_CEGOS",
   },
 ]
 
@@ -103,18 +103,10 @@ export function ReferenciasSection() {
               }`}
             >
               <div className="flex flex-col sm:flex-row items-start justify-between mb-4 sm:mb-6 gap-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-700 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <img
-                    src={currentReferencia.logo || "/placeholder.svg"}
-                    alt="Logo da instituição"
-                    className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
-                    onError={(e) => {
-                      e.target.style.display = "none"
-                      e.target.nextSibling.style.display = "block"
-                    }}
-                  />
+                
+
                   <div className="hidden text-white text-xs font-bold">LOGO</div>
-                </div>
+               
 
                 <button
                   onClick={() => window.open(currentReferencia.link, "_blank")}
