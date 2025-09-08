@@ -8,23 +8,23 @@ export function SobreSection() {
   const teamMembers = [
     {
       name: "Ana Juh",
-      role: "Gerente do Projeto / Designer",
-      description: "Ela ajuda nas partes administrativas, e foi quem pediu as peças do protótipo.",
+      role: "Criatividade e Organização do Grupo",
+      description: "Responsável por manter o grupo alinhado e produtivo, trouxe criatividade para as ideias e participou ativamente na elaboração dos projetos.",
     },
     {
       name: "Antony Novaes",
-      role: "Desenvolver / Helper / Game",
-      description: "Fez o jogo, faz parte do time, mas não faz nada.",
+      role: "Desenvolvedor do Jogo",
+      description: "Criador do jogo do time, também se destacou por estar sempre disposto a colaborar em todas as áreas, garantindo que o projeto avançasse em conjunto.",
     },
     {
       name: "Gustavo Henrique",
-      role: "Developer / Helper / Mecanical",
-      description: "Desenvolveu o site juntamente com Lucas Soares e Antony Novaes, e mexe no protótipo físico.",
+      role: "Programação e Parte Física",
+      description: "Foi quem programou o site e cuidou da parte física do projeto, tornando as ideias possíveis na prática.",
     },
     {
       name: "Lucas Soares",
-      role: "Designer / Developer / Writer / Ajudante",
-      description: "Ele é o cara que ajudou no site, mexe no protótipo e é designer do figma.",
+      role: "Design e Desenvolvimento do Site",
+      description: "Responsável pelo design e pela construção do site, também deu suporte em diferentes etapas, contribuindo para a união e qualidade do trabalho.",
     },
   ]
 
@@ -35,7 +35,11 @@ export function SobreSection() {
         <h1
           className={`text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 ${isDark ? "text-white" : "text-gray-800"}`}
         >
-          Nosso Time
+          Nosso
+          <span className="bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent ml-2">
+              Time
+            </span>
+
         </h1>
         <p className={`text-base sm:text-lg ${isDark ? "text-gray-400" : "text-gray-700"}`}>Pessoas da Equipe.</p>
       </div>
@@ -64,19 +68,7 @@ export function SobreSection() {
                 {member.description}
               </p>
 
-              {/* Social Icons */}
-              <div className="flex gap-2">
-                <div
-                  className={`w-5 h-5 hover:text-orange-500 cursor-pointer transition-colors flex items-center justify-center text-xs font-bold ${isDark ? "text-gray-400" : "text-gray-600"}`}
-                >
-                  @
-                </div>
-                <div
-                  className={`w-5 h-5 hover:text-orange-500 cursor-pointer transition-colors flex items-center justify-center text-xs font-bold ${isDark ? "text-gray-400" : "text-gray-600"}`}
-                >
-                  in
-                </div>
-              </div>
+
             </div>
           </div>
         ))}
@@ -98,12 +90,6 @@ export function SobreSection() {
               <Mail className={`w-4 h-4 sm:w-5 sm:h-5 ${isDark ? "text-gray-400" : "text-gray-900"}`} />
               <span className={`text-sm sm:text-base ${isDark ? "text-gray-400" : "text-gray-900"}`}>
                 BrailleTech@gmail.com
-              </span>
-            </div>
-            <div className="flex items-center gap-3">
-              <Phone className={`w-4 h-4 sm:w-5 sm:h-5 ${isDark ? "text-gray-400" : "text-gray-900"}`} />
-              <span className={`text-sm sm:text-base ${isDark ? "text-gray-400" : "text-gray-900"}`}>
-                (11) 99999-9999
               </span>
             </div>
             <div className="flex items-center gap-3">

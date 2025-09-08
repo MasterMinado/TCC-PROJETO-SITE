@@ -66,11 +66,7 @@ export function HomeContent() {
       </div>
 
       {/* Call to Action */}
-      <div className="text-center">
-        <button className="bg-orange-600 hover:bg-orange-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
-          Vamos Começar! →
-        </button>
-      </div>
+      
     </div>
   )
 }

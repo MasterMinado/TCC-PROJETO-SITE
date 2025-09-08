@@ -23,7 +23,7 @@ export function GameSection() {
           <p
             className={`text-sm sm:text-base leading-relaxed text-justify ${isDark ? "text-gray-400" : "text-gray-800"}`}
           >
-Quatro personagens cegos embarcam em uma jornada única para aprender Braille. Pelo caminho, eles enfrentam inimigos e obstáculos, enquanto juntam letras e formam palavras que os levam cada vez mais longe. A grande missão é chegar até o protótipo, símbolo da conquista do conhecimento e da superação.
+Quatro personagens cegos estão em uma jornada única. Cada um deles pode ser escolhido pelo jogador para enfrentar desafios e inimigos em um mundo cheio de obstáculos. Durante a aventura, eles precisam coletar letras em braille e formar palavras, o que desbloqueia novas etapas do caminho. O objetivo final é encontrar o protótipo do conversor braille, uma tecnologia capaz de transformar a forma como pessoas cegas interagem com a informação.
           </p>
         </div>
       </div>
@@ -52,7 +52,10 @@ Quatro personagens cegos embarcam em uma jornada única para aprender Braille. P
         >
   Entre nesse desafio e ajude os quatro personagens a vencer inimigos, juntar palavras em Braille e conquistar o protótipo. 
         </p>
-        <button
+        {/* Botão linkado para o Gdevelop */}
+        <a
+        href="https://gdevelop.io" target="_blank" rel="noopener noreferrer"
+        ><button
           className={`bg-white text-black px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors duration-300 flex items-center gap-2 mx-auto text-sm sm:text-base`}
         >
           <span className={`text-orange-500`}>▶</span>
@@ -66,6 +69,7 @@ Quatro personagens cegos embarcam em uma jornada única para aprender Braille. P
             />
           </svg>
         </button>
+        </a>
       </div>
     </div>
   )

@@ -9,32 +9,32 @@ export function TutorialFeatures() {
   const features = [
     {
       icon: Brain,
-      title: "Aprendizado Adaptativo",
-      description: "O sistema se adapta ao seu ritmo e estilo de aprendizado",
+      title: "Passo 1",
+      description: "Aperte o botão de iniciar o comando de voz",
     },
     {
       icon: Target,
-      title: "Exercícios Práticos",
-      description: "Pratique com exercícios interativos e receba feedback imediato",
+      title: "Passo 2",
+      description: "Certifique que sua voz esta clara e audível",
     },
     {
       icon: Trophy,
-      title: "Sistema de Conquistas",
-      description: "Ganhe badges e acompanhe seu progresso",
+      title: "Passo 3",
+      description: "Fale as letras do alfabeto para que o sistema reconheça",
     },
     {
       icon: Users,
-      title: "Comunidade Ativa",
-      description: "Conecte-se com outros estudantes e compartilhe experiências",
+      title: "Passo 4",
+      description: "Se tudo der certo, o sistema ira processar e enviar para o dispositivo",
     },
     {
       icon: Clock,
-      title: "Flexibilidade Total",
+      title: "Passo 5",
       description: "Aprenda no seu tempo, quando e onde quiser",
     },
     {
       icon: Zap,
-      title: "Resultados Rápidos",
+      title: "Passo 6",
       description: "Veja progresso real em apenas algumas semanas",
     },
   ]
@@ -44,13 +44,13 @@ export function TutorialFeatures() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            <span className={isDark ? "text-white" : "text-gray-900"}>Por que Escolher Nosso</span>
+            <span className={isDark ? "text-white" : "text-gray-900"}>Modo de uso</span>
             <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent ml-2">
-              Tutorial?
+              Modulo de voz
             </span>
           </h2>
           <p className={`text-lg max-w-2xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-            Desenvolvido com as melhores práticas pedagógicas e tecnologia de ponta
+            Desenvolvido para facilitar o aprendizado do Braille de forma intuitiva e eficaz
           </p>
         </div>
 
@@ -75,27 +75,6 @@ export function TutorialFeatures() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div
-            className={`p-8 rounded-2xl border ${
-              isDark
-                ? "bg-gradient-to-r from-gray-900/80 to-gray-800/80 border-gray-700"
-                : "bg-gradient-to-r from-gray-50 to-white border-gray-200"
-            }`}
-          >
-            <h3 className="text-2xl font-bold mb-4">
-              <span className={isDark ? "text-white" : "text-gray-900"}>Pronto para Começar?</span>
-            </h3>
-            <p className={`text-lg mb-6 ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-              Junte-se a milhares de pessoas que já dominaram o Braille
-            </p>
-            <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
-              Iniciar Tutorial Gratuito
-            </button>
-          </div>
         </div>
       </div>
     </section>

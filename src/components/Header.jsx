@@ -53,10 +53,16 @@ export function Header() {
             Home
           </Link>
           <Link
+            to="/tutorial"
+            className={`hover:text-orange-500 transition-colors font-medium ${isDark ? "text-white" : "text-gray-800"}`}
+          >
+            Tutorial
+          </Link>
+          <Link
             to="/produtos"
             className={`hover:text-orange-500 transition-colors font-medium ${isDark ? "text-white" : "text-gray-800"}`}
           >
-            Produto
+            Produtos
           </Link>
           <Link
             to="/game"
@@ -74,13 +80,7 @@ export function Header() {
             to="/sobre"
             className={`hover:text-orange-500 transition-colors font-medium ${isDark ? "text-white" : "text-gray-800"}`}
           >
-            Sobre
-          </Link>
-          <Link
-            to="/tutorial"
-            className={`hover:text-orange-500 transition-colors font-medium ${isDark ? "text-white" : "text-gray-800"}`}
-          >
-            Tutorial
+            Nosso Time
           </Link>
         </nav>
 
@@ -95,13 +95,6 @@ export function Header() {
             {isDark ? <Sun size={18} /> : <Moon size={18} />}
           </button>
 
-          <button
-            className={`border hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 bg-transparent px-3 md:px-4 py-1.5 md:py-2 rounded text-sm ${
-              isDark ? "border-white text-white" : "border-gray-800 text-gray-800"
-            }`}
-          >
-            Download
-          </button>
         </div>
       </header>
 

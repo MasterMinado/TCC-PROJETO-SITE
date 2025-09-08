@@ -8,24 +8,20 @@ export function TutorialSteps() {
 
   const steps = [
     {
-      title: "Fundamentos do Braille",
-      description: "Aprenda a história e os princípios básicos do sistema Braille",
-      completed: true,
+      title: "Passo 1",
+      description: "Simples! Conecte o dispositivo via Bluetooth ao seu smartphone ou tablet",
     },
     {
-      title: "Alfabeto e Números",
-      description: "Domine todas as letras e números em Braille",
-      completed: true,
+      title: "Passo 2",
+      description: "Abra o aplicativo e selecione o modo de digitação no CMD",
     },
     {
-      title: "Pontuação e Símbolos",
-      description: "Aprenda pontuação, acentos e símbolos especiais",
-      completed: false,
+      title: "Passo 3",
+      description: "Apos a certificação de tudo ocorreu bem e você esta conectado. Digite as letras do alfabeto",
     },
     {
-      title: "Leitura Avançada",
-      description: "Pratique com textos complexos e contrações",
-      completed: false,
+      title: "Passo 4",
+      description: "Agora é só ver as peças se movimentando e colocando o dedo para sentir as letras.",
     },
   ]
 
@@ -34,13 +30,13 @@ export function TutorialSteps() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            <span className={isDark ? "text-white" : "text-gray-900"}>Seu Caminho de</span>
+            <span className={isDark ? "text-white" : "text-gray-900"}>Modo de uso</span>
             <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent ml-2">
-              Aprendizado
+              BLUETOOTH
             </span>
           </h2>
           <p className={`text-lg max-w-2xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>
-            Siga nosso programa estruturado e progressivo
+            Siga os passos abaixo
           </p>
         </div>
 
@@ -59,11 +55,6 @@ export function TutorialSteps() {
               }`}
             >
               <div className="flex-shrink-0">
-                {step.completed ? (
-                  <CheckCircle className="w-8 h-8 text-orange-500" />
-                ) : (
-                  <Circle className={`w-8 h-8 ${isDark ? "text-gray-400" : "text-gray-300"}`} />
-                )}
               </div>
               <div className="flex-1">
                 <h3
@@ -75,19 +66,7 @@ export function TutorialSteps() {
                 </h3>
                 <p className={isDark ? "text-gray-400" : "text-gray-600"}>{step.description}</p>
               </div>
-              <div className="flex-shrink-0">
-                <span
-                  className={`text-sm font-medium px-3 py-1 rounded-full ${
-                    step.completed
-                      ? "bg-orange-500 text-white"
-                      : isDark
-                        ? "bg-gray-800 text-gray-400"
-                        : "bg-gray-100 text-gray-500"
-                  }`}
-                >
-                  {step.completed ? "Concluído" : "Pendente"}
-                </span>
-              </div>
+              
             </div>
           ))}
         </div>
