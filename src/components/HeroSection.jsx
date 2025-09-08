@@ -45,7 +45,7 @@ export function HeroSection() {
       </div>
 
       {/* Play button */}
-      <div className="flex-1 flex justify-center lg:justify-end animate-in slide-in-from-right duration-1000 delay-300 w-full lg:w-auto">
+      <div className="flex-10 flex justify-center lg:justify-end animate-in slide-in-from-right duration-1000 delay-300 w-full lg:w-auto">
         <PlayButton />
       </div>
     </section>

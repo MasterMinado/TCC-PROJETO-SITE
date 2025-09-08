@@ -46,7 +46,7 @@ export function TutorialFeatures() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             <span className={isDark ? "text-white" : "text-gray-900"}>Modo de uso</span>
             <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent ml-2">
-              Modulo de voz
+              Módulo de voz
             </span>
           </h2>
           <p className={`text-lg max-w-2xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>

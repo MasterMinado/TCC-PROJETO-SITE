@@ -82,7 +82,7 @@ export function SobreSection() {
             Entre em contato
           </h2>
           <p className={`mb-6 sm:mb-8 text-sm sm:text-base ${isDark ? "text-gray-400" : "text-gray-900"}`}>
-            Estamos aqui para ajudar! Entre em contato conosco através do formulário ou pelos canais abaixo.
+            Estamos aqui para ajudar! Entre em contato conosco pelo canal abaixo.
           </p>
 
           <div className="space-y-4">
