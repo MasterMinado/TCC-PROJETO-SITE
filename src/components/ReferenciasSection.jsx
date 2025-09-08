@@ -77,7 +77,9 @@ export function ReferenciasSection() {
     <div className="min-h-screen flex flex-col justify-center px-4 sm:px-6 py-16 sm:py-20">
       <div className="text-center mb-8 sm:mb-12">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-          <span className="text-orange-500">Refer</span>
+          <span className="bg-gradient-to-r from-orange-400 via-orange-900 to-orange-600 bg-clip-text text-transparent">
+              Refer
+            </span>
           <span className={`${isDark ? "text-white" : "text-gray-800"}`}>ências</span>
         </h1>
         <div className="flex justify-center space-x-1 text-orange-500 text-sm sm:text-base lg:text-lg">

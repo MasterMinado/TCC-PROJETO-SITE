@@ -30,9 +30,9 @@ export function TutorialSteps() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            <span className={isDark ? "text-white" : "text-gray-900"}>Modo de uso</span>
-            <span className="bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent ml-2">
-              BLUETOOTH
+            <span className={isDark ? "text-white" : "text-gray-900"}>Modo de uso </span>
+            <span className="bg-gradient-to-r from-orange-400 via-orange-900 to-orange-600 bg-clip-text text-transparent">
+               BLUETOOTH
             </span>
           </h2>
           <p className={`text-lg max-w-2xl mx-auto ${isDark ? "text-gray-300" : "text-gray-600"}`}>

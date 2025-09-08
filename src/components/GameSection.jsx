@@ -9,7 +9,9 @@ export function GameSection() {
       {/* Hero Section */}
       <div className="text-center mb-12 sm:mb-16 pt-16 sm:pt-20">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4">
-          <span className="text-orange-500">Game</span> Braille
+          <span className="bg-gradient-to-r from-orange-400 via-orange-900 to-orange-600 bg-clip-text text-transparent">
+              Game
+            </span> Braille
         </h1>
         <p className={`text-base sm:text-lg px-4 ${isDark ? "text-gray-400" : "text-gray-800"}`}>
           Embarque nessa jornada e venha conhecer nosso jogo
@@ -31,7 +33,9 @@ Quatro personagens cegos estão em uma jornada única. Cada um deles pode ser es
       {/* Game Demo */}
       <div className="mb-12 sm:mb-16">
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">
-          <span className="text-orange-500">Game</span> Demo
+          <span className="bg-gradient-to-r from-orange-400 via-orange-900 to-orange-600 bg-clip-text text-transparent">
+              Game
+            </span> Demo
         </h2>
         <div className="flex justify-center px-4">
           <div className="bg-zinc-800 rounded-lg p-6 sm:p-8 w-full max-w-sm sm:max-w-md aspect-video flex items-center justify-center border border-zinc-700">
