@@ -112,7 +112,7 @@ export function Header() {
               Referências
             </NavLink>
             <NavLink to="/sobre" onClick={closeMenu} className={({ isActive }) => mobileItemClass(isActive)}>
-              Sobre
+              Nosso Time
             </NavLink>
             <NavLink to="/tutorial" onClick={closeMenu} className={({ isActive }) => mobileItemClass(isActive)}>
               Tutorial

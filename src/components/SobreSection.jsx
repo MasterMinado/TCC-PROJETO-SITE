@@ -7,7 +7,7 @@ export function SobreSection() {
   const { isDark } = useTheme()
   const teamMembers = [
     {
-      name: "Ana Juh",
+      name: "Ana Júlia Viana",
       role: "Criatividade e Organização do Grupo",
       description: "Responsável por manter o grupo alinhado e produtivo, trouxe criatividade para as ideias e participou ativamente na elaboração dos projetos.",
     },
@@ -17,7 +17,7 @@ export function SobreSection() {
       description: "Criador do jogo do time, também se destacou por estar sempre disposto a colaborar em todas as áreas, garantindo que o projeto avançasse em conjunto.",
     },
     {
-      name: "Gustavo Henrique",
+      name: "Gustavo Freitas",
       role: "Programação e Parte Física",
       description: "Foi quem programou o site e cuidou da parte física do projeto, tornando as ideias possíveis na prática.",
     },
